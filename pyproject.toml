@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bdb2026"
+version = "0.1.0"
+description = "Physics-informed transformer for NFL Big Data Bowl 2026 player-trajectory prediction."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Judy Zhu", email = "judy.zhu6052@gmail.com" }
+]
+keywords = ["nfl", "sports-analytics", "trajectory-prediction", "transformer", "physics-informed", "deep-learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+    "pandas>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/judyz0415/nfl-big-data-bowl-2026"
+Competition = "https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-prediction"
+
+[project.scripts]
+bdb2026-train = "bdb2026.train:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
