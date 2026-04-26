@@ -151,22 +151,6 @@ Kaggle. We split by week (1-13 train, 14-18 validation) to mirror the
 competition's held-out scoring protocol. CSVs are not committed here — see
 `.gitignore`.
 
-## Team
-
-This was the final project for our team **HODL** in our deep learning course
-(Fall 2025), submitted to the NFL Big Data Bowl 2026:
-
-| Member | Primary contribution |
-| --- | --- |
-| Evan Hoch | (see `reports/HODL_Final_Report.pdf`) |
-| Yue Ran Kang | (see `reports/HODL_Final_Report.pdf`) |
-| Colton Mikolajczyk | (see `reports/HODL_Final_Report.pdf`) |
-| **Judy Zhu** | **Physics-Informed Transformer** (this repo's winning model) |
-
-The final report covers all six models the team built (XGBoost, Physics-Informed
-ResNet, LSTM, Transformer, Physics-Informed LSTM, Physics-Informed Transformer).
-This repository isolates the architecture I personally built and tuned.
-
 ## License
 
 Released under the [MIT License](LICENSE).
